@@ -1,0 +1,44 @@
+/* .ck-powered-by-balloon {
+    display: none !important;
+}
+
+.ck-editor__editable {
+    height: 450px;
+}
+
+.ck-rounded-corners .ck.ck-editor__main>.ck-editor__editable,
+.ck.ck-editor__main>.ck-editor__editable.ck-rounded-corners {
+    border-radius: 0 0 10px 10px;
+}
+
+.ck.ck-editor__editable.ck-focused:not(.ck-editor__nested-editable) {
+    border: 1px solid #ededed;
+    box-shadow: none !important;
+}
+
+.ck.ck-editor__main>.ck-editor__editable:not(.ck-focused),
+.ck.ck-toolbar {
+    border-color: #ededed;
+} */
+.fr-second-toolbar {
+    display: none;
+}
+.fr-wrapper {
+    border-bottom-color: #CCCCCC !important;
+    border-radius: 0 0 10px 10px;
+}
+.fr-box.fr-basic .fr-element {
+    height: 450px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.book-viewer-container .preview-content {
+    height: 450px;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: 1px solid #e9e9e9;
+    padding: 10px 15px;
+    border-radius: 10px;
+}

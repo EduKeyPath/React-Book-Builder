@@ -1,0 +1,15 @@
+.auth-right-panel {
+    background-color: #fff;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 10px 15px 15px 15px;
+    border-radius: 10px;
+    width: calc(100% - 200px - 32px);
+    min-height: 380px;
+}
+
+.auth-right-panel h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}

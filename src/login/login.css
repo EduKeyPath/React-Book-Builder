@@ -1,0 +1,78 @@
+.login-page .left-part {
+    background: #00D47E;
+    height: 20vh;
+    padding: 15px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.login-page .left-part h1 {
+    font-size: 26px;
+    margin: 0;
+    color: #fff;
+}
+.login-page .right-part {
+    height: 80vh;
+    background: #f2f7ff;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-page .right-part .logo-panel {
+    text-align: center;
+}
+.logo-panel .logo {
+    max-width: 250px;
+}
+.login-page .form-control {
+    width: 100%;
+    height: 40px;
+    border:none;
+    border-radius: 6px;    
+    outline: 1px solid transparent;
+}
+
+.login-page .form-control:hover {
+    border: none;
+}
+.login-page .form-control:focus {
+    border-color: none;
+    outline: none;
+    box-shadow: none;
+}
+.login-page .form-control:focus-visible {
+    box-shadow: inset 0 0 0 1px #2e6bc7;
+    border-color: #2e6bc7;
+    outline: 2px solid transparent;
+}
+.login-page form {
+    width: 100%;
+    padding: 0 5%;
+}
+.alert-wrap {
+    left: 0;
+    width: 99%;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 576px) {
+    .login-page .left-part {
+        height: 100vh;
+        padding: 30px;
+    }
+    .login-page .right-part {
+        height: 100vh;
+    }
+}
+@media screen and (min-width: 768px) {
+    .login-page .left-part h1 {
+        font-size: 52px;
+    }    
+    .login-page form {
+        padding: 0 15%;
+    }
+}

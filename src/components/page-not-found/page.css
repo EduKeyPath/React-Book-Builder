@@ -1,0 +1,17 @@
+.no-page {
+    margin-top: 100px;
+    padding: 15px;
+    text-align: center;
+}
+
+.no-page h1 {
+    font-size: 64px;
+    margin-bottom: 5px;
+}
+
+@media screen and (min-width: 576px) {
+    .no-page h1 {
+        font-size: 100px;
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,263 @@
+:root {
+    --boxSize: 3px;
+    --gutter: 3px;
+}
+
+.audio-converter .audio-box {
+    border: 1px solid #e5e5e5;
+    width: 100%;
+    padding: 10px;
+    height: 234px;
+    border-radius: 10px;
+}
+
+.audio-converter .audio-box p {
+    margin: 0;
+}
+
+.audio-converter .audio-box .button-row .ds-btn {
+    width: 28%;
+}
+
+.audio-converter .audio-box .audio-row {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 5px 0;
+    height: 53px;
+    display: flex;
+    align-items: center;
+}
+
+.audio-converter .audio-row .left-part {
+    width: 30%;
+}
+
+.audio-converter .audio-row .right-part {
+    width: 70%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.audio-converter .audio-box .button-row {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    background: white;
+    width: 190px;
+    margin: 0 auto 10px auto;
+    box-shadow: 0 2px 5px -2px #ccc;
+    border-radius: 50px;
+}
+
+.audio-converter .audio-box .audio-row:last-child {
+    border-bottom: none;
+}
+
+.audio-converter .converted-content-body .hdng {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.audio-converter .converted-content-body .content-box {
+    border: 1px solid #e5e5e5;
+    width: 100%;
+    padding: 10px 10px 10px 15px;
+    border-radius: 10px;
+    overflow-y: auto;
+    height: 230px;
+}
+
+.audio-converter .content-box-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.audio-converter .content-box .content-icon {
+    font-size: 70px;
+    color: #afafaf;
+}
+
+.audio-converter .content-box p {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+}
+
+.speaking-box-container {
+    display: flex;
+    justify-content: space-between;
+    height: 34px;
+    width: calc((var(--boxSize) + var(--gutter)) * 5);
+}
+
+.speaking-box-container .speaking {
+    transform: scaleY(.4);
+    height: 100%;
+    width: var(--boxSize);
+    background: #444444;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    border-radius: 8px;
+}
+
+.speaking-box-container .speaking1 {
+    animation-name: Squiet;
+}
+
+.speaking-box-container .speaking2 {
+    animation-name: Snormal;
+}
+
+.speaking-box-container .speaking3 {
+    animation-name: Squiet;
+}
+
+.speaking-box-container .speaking4 {
+    animation-name: Sloud;
+}
+
+.speaking-box-container .speaking5 {
+    animation-name: Squiet;
+}
+
+@keyframes Squiet {
+    25% {
+        transform: scaleY(.6);
+    }
+
+    50% {
+        transform: scaleY(.4);
+    }
+
+    75% {
+        transform: scaleY(.8);
+    }
+}
+
+@keyframes Snormal {
+    25% {
+        transform: scaleY(1);
+    }
+
+    50% {
+        transform: scaleY(.4);
+    }
+
+    75% {
+        transform: scaleY(.6);
+    }
+}
+
+@keyframes Sloud {
+    25% {
+        transform: scaleY(1);
+    }
+
+    50% {
+        transform: scaleY(.4);
+    }
+
+    75% {
+        transform: scaleY(1.2);
+    }
+}
+
+
+.recording-box-container {
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.record-stripe {
+    width: 2px;
+    height: 34px;
+    background: linear-gradient(45deg, #444444, #9b9b9b);
+    margin: 4px;
+    animation: RecordStripe 1s linear infinite;
+    border-radius: 20px;
+}
+
+.record-stripe:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.record-stripe:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.record-stripe:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.record-stripe:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.record-stripe:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.record-stripe:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+.record-stripe:nth-child(8) {
+    animation-delay: 0.7s;
+}
+
+.record-stripe:nth-child(9) {
+    animation-delay: 0.8s;
+}
+
+.record-stripe:nth-child(10) {
+    animation-delay: 0.9s;
+}
+
+@keyframes RecordStripe {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+.translate-box-container {
+    position: relative;
+    width: 50%;
+    margin-top: 2px;
+}
+.translate-box-container .translate-wave {
+    background-color: #444444;
+    width: 0px;
+    height: 10px;
+    border-radius: 15px;
+    animation: progres 4s infinite linear; 
+}
+@keyframes progres{
+    0%{
+      width: 0%;
+    }
+    25%{
+        width: 50%;
+    }
+    50%{
+        width: 75%;
+    }
+    75%{
+        width: 85%;
+    }
+    100%{
+        width: 100%;
+    }
+};

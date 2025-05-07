@@ -1,0 +1,40 @@
+{"data":{
+    "books":[
+        {
+        "bookId" : 1,
+        "pageId" : 1,
+        "pagenName" : "Page 1",
+        "pageData" : 
+            {
+                "content" : "<p>Page 1 content - This is CKeditor dynamic content</p>"
+            }
+        },
+        {
+        "bookId" : 1,
+        "pageId" : 2,
+        "pagenName" : "Page 2",
+        "pageData" : 
+            {
+                "content" : "<p>Page 2 content - This is CKeditor dynamic content</p>"
+            }
+        },
+        {
+        "bookId" : 1,
+        "pageId" : 3,
+        "pagenName" : "Page 3",
+        "pageData" : 
+            {
+                "content" : "<p>Page 3 content - This is CKeditor dynamic content</p>"
+            }
+        },
+        {
+        "bookId" : 1,
+        "pageId" : 4,
+        "pagenName" : "Page 4",
+        "pageData" : 
+            {
+                "content" : "<p>Page 4 content - This is CKeditor dynamic content</p>"
+            }
+        }
+    ]
+}}
